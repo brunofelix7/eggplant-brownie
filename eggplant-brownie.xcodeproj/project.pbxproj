@@ -12,8 +12,8 @@
 		ACD9BBE02127968B00E4E3DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD9BBDE2127968B00E4E3DD /* Main.storyboard */; };
 		ACD9BBE22127968F00E4E3DD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACD9BBE12127968F00E4E3DD /* Assets.xcassets */; };
 		ACD9BBE52127968F00E4E3DD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ACD9BBE32127968F00E4E3DD /* LaunchScreen.storyboard */; };
-		ACD9BBF02127968F00E4E3DD /* eggplant_brownieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9BBEF2127968F00E4E3DD /* eggplant_brownieTests.swift */; };
-		ACD9BBFB2127968F00E4E3DD /* eggplant_brownieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD9BBFA2127968F00E4E3DD /* eggplant_brownieUITests.swift */; };
+		ACF903B8212A39CA000238F6 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF903B7212A39CA000238F6 /* Meal.swift */; };
+		ACF903BA212A3A37000238F6 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACF903B9212A3A37000238F6 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +42,9 @@
 		ACD9BBE42127968F00E4E3DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ACD9BBE62127968F00E4E3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD9BBEB2127968F00E4E3DD /* eggplant-brownieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eggplant-brownieTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD9BBEF2127968F00E4E3DD /* eggplant_brownieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieTests.swift; sourceTree = "<group>"; };
-		ACD9BBF12127968F00E4E3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ACD9BBF62127968F00E4E3DD /* eggplant-brownieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "eggplant-brownieUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACD9BBFA2127968F00E4E3DD /* eggplant_brownieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = eggplant_brownieUITests.swift; sourceTree = "<group>"; };
-		ACD9BBFC2127968F00E4E3DD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ACF903B7212A39CA000238F6 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		ACF903B9212A3A37000238F6 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				ACD9BBD92127968B00E4E3DD /* eggplant-brownie */,
-				ACD9BBEE2127968F00E4E3DD /* eggplant-brownieTests */,
-				ACD9BBF92127968F00E4E3DD /* eggplant-brownieUITests */,
 				ACD9BBD82127968B00E4E3DD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,9 +93,10 @@
 		ACD9BBD92127968B00E4E3DD /* eggplant-brownie */ = {
 			isa = PBXGroup;
 			children = (
+				ACF903B6212A399F000238F6 /* controllers */,
+				ACF903B5212A3999000238F6 /* views */,
+				ACF903B4212A3934000238F6 /* models */,
 				ACD9BBDA2127968B00E4E3DD /* AppDelegate.swift */,
-				ACD9BBDC2127968B00E4E3DD /* ViewController.swift */,
-				ACD9BBDE2127968B00E4E3DD /* Main.storyboard */,
 				ACD9BBE12127968F00E4E3DD /* Assets.xcassets */,
 				ACD9BBE32127968F00E4E3DD /* LaunchScreen.storyboard */,
 				ACD9BBE62127968F00E4E3DD /* Info.plist */,
@@ -107,22 +104,29 @@
 			path = "eggplant-brownie";
 			sourceTree = "<group>";
 		};
-		ACD9BBEE2127968F00E4E3DD /* eggplant-brownieTests */ = {
+		ACF903B4212A3934000238F6 /* models */ = {
 			isa = PBXGroup;
 			children = (
-				ACD9BBEF2127968F00E4E3DD /* eggplant_brownieTests.swift */,
-				ACD9BBF12127968F00E4E3DD /* Info.plist */,
+				ACF903B7212A39CA000238F6 /* Meal.swift */,
+				ACF903B9212A3A37000238F6 /* Item.swift */,
 			);
-			path = "eggplant-brownieTests";
+			path = models;
 			sourceTree = "<group>";
 		};
-		ACD9BBF92127968F00E4E3DD /* eggplant-brownieUITests */ = {
+		ACF903B5212A3999000238F6 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				ACD9BBFA2127968F00E4E3DD /* eggplant_brownieUITests.swift */,
-				ACD9BBFC2127968F00E4E3DD /* Info.plist */,
+				ACD9BBDE2127968B00E4E3DD /* Main.storyboard */,
 			);
-			path = "eggplant-brownieUITests";
+			path = views;
+			sourceTree = "<group>";
+		};
+		ACF903B6212A399F000238F6 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				ACD9BBDC2127968B00E4E3DD /* ViewController.swift */,
+			);
+			path = controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ACF903BA212A3A37000238F6 /* Item.swift in Sources */,
 				ACD9BBDD2127968B00E4E3DD /* ViewController.swift in Sources */,
+				ACF903B8212A39CA000238F6 /* Meal.swift in Sources */,
 				ACD9BBDB2127968B00E4E3DD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD9BBF02127968F00E4E3DD /* eggplant_brownieTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD9BBFB2127968F00E4E3DD /* eggplant_brownieUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
