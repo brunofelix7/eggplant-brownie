@@ -7,9 +7,16 @@ class ViewController: UIViewController {
     
     @IBAction
     func add () {
-        let name = nameField.text
-        let happiness = happinessField.text
-        print("Name: \(name) Happiness: \(happiness)")
+        if(nameField == nil || happinessField == nil){
+            return
+        }
+        let name = nameField!.text
+        let happiness = happinessField!.text
+        if(happiness == nil){
+            return
+        }
+        let meal = Meal(name: name!, happiness: Int(happiness!)!)
+        print("Name: \(meal.name) Happiness: \(meal.happiness)")
     }
 
 }

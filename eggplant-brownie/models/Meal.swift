@@ -12,8 +12,8 @@ class Meal {
     
     func calcCalories() -> Double {
         var total = 0.0
-        for i in items {
-            total += i.calories
+        for item in items {
+            total += item.calories
         }
         return total
     }
